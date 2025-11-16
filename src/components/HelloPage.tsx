@@ -147,58 +147,6 @@ const HelloPage = () => {
             </div>
           </div>
         </div>
-
-        {/* قسم الإحصائيات المحسّن */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
-          {[
-            {
-              value: "15K+",
-              label: "مستفيد",
-              icon: Users,
-              color: "from-emerald-500 to-teal-600",
-            },
-            {
-              value: "180+",
-              label: "مشروع",
-              icon: Target,
-              color: "from-teal-500 to-cyan-600",
-            },
-            {
-              value: "3.2K+",
-              label: "يتيم",
-              icon: Heart,
-              color: "from-emerald-600 to-green-700",
-            },
-            {
-              value: "94%",
-              label: "رضا العملاء",
-              icon: TrendingUp,
-              color: "from-cyan-500 to-teal-600",
-            },
-          ].map((stat, index) => {
-            const Icon = stat.icon;
-            return (
-              <div
-                key={index}
-                className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 text-center shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-white/50 group"
-              >
-                <div
-                  className={`bg-gradient-to-br ${stat.color} w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}
-                >
-                  <Icon className="w-7 h-7 text-white" />
-                </div>
-                <div
-                  className={`text-3xl md:text-4xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2`}
-                >
-                  {stat.value}
-                </div>
-                <div className="text-gray-600 text-base font-semibold">
-                  {stat.label}
-                </div>
-              </div>
-            );
-          })}
-        </div>
       </div>
     </div>
   );

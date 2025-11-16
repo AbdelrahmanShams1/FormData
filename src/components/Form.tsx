@@ -39,7 +39,7 @@ interface Section {
 }
 
 interface ProjectType {
-  id: "store" | "store-dashboard";
+  id: "store" | "store-dashboard" | "dashboard";
   name: string;
   icon: LucideIcon;
   description: string;
@@ -146,6 +146,12 @@ const Form = () => {
       name: "متجر + لوحة تحكم",
       icon: LayoutDashboard,
       description: "متجر مع لوحة تحكم إدارية كاملة",
+    },
+    {
+      id: "dashboard",
+      name: "لوحة تحكم",
+      icon: LayoutDashboard,
+      description: "لوحة تحكم إدارية كاملة",
     },
   ];
 
